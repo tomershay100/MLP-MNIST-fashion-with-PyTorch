@@ -1,9 +1,6 @@
+
 # MLP MNIST-fashion with PyTorch
 MLP implementation in Python with PyTorch for the MNIST-fashion dataset (90+ on test).
-
-#### Contributes
-* Roei Gida
-* Tomer Shay
 
 1. [General](#General)
     - [Background](#background)
@@ -11,8 +8,13 @@ MLP implementation in Python with PyTorch for the MNIST-fashion dataset (90+ on 
     - [Running Instructions](https://github.com/tomershay100/MLP-MNIST-fashion-with-PyTorch/blob/main/README.md#running-instructions)
 2. [Dependencies](#dependencies) 
 3. [Installation](#installation)
+4. [Footnote](#footnote)
 
 ## General
+
+#### Contributes
+* Roei Gida
+* Tomer Shay
 
 ### Background
 Implementation of a neural network on the MNIST dataset, which takes as an input a ``28*28`` grayscale image (``784`` floating point values of pixels between ``0-255``).
@@ -134,3 +136,7 @@ Note that for using the dataset given in this repo, you need to unzip the datase
 	```
 	$ python3 main.py -e 30 -validate 10 -model BestModel -batch_size 64
 	 ```
+
+ 
+## Footnote:
+As you can see, there are several additional files. The files contain different graphs of different experiments of the program with some changes of the hyperparameters (e.g. learning rate, batch size, etc.) . In addition, it contains a report in the ``Hebrew language`` that explains the structure of the models (only ``'A'`` - ``'F'``).
