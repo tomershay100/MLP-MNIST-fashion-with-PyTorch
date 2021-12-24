@@ -1,6 +1,10 @@
 # MLP MNIST-fashion with PyTorch
 MLP implementation in Python with PyTorch for the MNIST-fashion dataset (90+ on test).
 
+#### Contributes
+* Roei Gida
+* Tomer Shay
+
 1. [General](#General)
     - [Background](#background)
     - [Models Structure](https://github.com/tomershay100/MLP-MNIST-fashion-with-PyTorch/blob/main/README.md#models-structure)
