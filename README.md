@@ -1,6 +1,3 @@
-
-
-
 # MLP MNIST-fashion with PyTorch
 MLP implementation in Python with PyTorch for the MNIST-fashion dataset (90+ on test).
 
@@ -87,29 +84,32 @@ To get the best percentages on the testing set (90+), our experiments showed tha
 
 ### Running Instructions
 
-The program gets several arguments, and this can be seen with the ``-h`` flag when running. A total of about seven arguments can be sent:
-* flag ```-train_x TRAIN_X_PATH``` for the training images file path (file that contains 784 values in each row).
-* flag ```-train_y TRAIN_Y_PATH``` for the training labels file path (file that contains one value between ``0-9`` in each row and has the same rows number as the train_x file).
-* flag ```-test_x TEST_X_PATH``` for the testing images file path (file that contains 784 values in each row).
-* flag ```-test_y TEST_Y_PATH``` for the testing labels file path (file that contains one value between ``0-9`` in each row and has the same rows number as the train_x file).
-* flag ```-lr LEARNING_RATE``` for the learning rate that will be used while training the model (``default value = 0.1``).
-* flag ```-e EPOCHS``` for the number of epochs (``default value = 20``).
-* flag ```-size HIDDEN_LAYER_SIZE``` for the hidden layer size (``default value = 128``).
-
+The program gets several arguments, and this can be seen with the ``-h`` or with ``-help`` flags when running. A total of about ten arguments can be sent:
+* **flag ```-train_x STRING```:** A ``String`` for the training images file path (file that contains 784 values in each row). *NOTE: this flag will be used only if ``-local True`` was enterd.*
+* **flag ```-train_y STRING```:** A ``String`` for the training labels file path (file that contains one value between ``0-9`` in each row and has the same rows number as the train_x file). *NOTE: this flag will be used only if ``-local True`` was enterd.*
+* **flag ```-test_x STRING```:** A ``String`` for the testing images file path (file that contains 784 values in each row). *NOTE: this flag will be used only if ``-local True`` was enterd.*
+* **flag ```-test_y STRING```:** A ``String`` for the testing labels file path (file that contains one value between ``0-9`` in each row and has the same rows number as the train_x file). *NOTE: this flag will be used only if ``-local True`` was enterd.*
+* **flag ```-e INT```:** An ``Integer`` for the number of epochs (``default value = 10``).
+* **flag ```-batch_size INT```:** An ``Integer`` for the batch size (``default value = 64``).
+* **flag ```-validate INT```:** An ``Integer`` for the percentage of the training set that should be allocated to the validation set (``default value = 10``).
+* **flag ```-model STRING```:** A ``String`` that says with which model to work in the program run. You can send ``'A'`` - ``'F'`` or ``'BestModel'`` (``default value = BestModel``).
+* **flag ```-local BOOLEAN```:** ``True`` to load the dataset locally (according to the paths entered), or ``False`` to load the original MNIST-fashion dataset (``default value = False``).
+* **flag  `-plot BOOLEAN`:** ``True`` to export a graph of the percentage of accuracy and loss value in each epoch (`default value = True`).
 
 running example:
 ```
-	$ python3 neural_net.py -train_x train_x -train_y train_y -test_x test_x -test_y test_y -lr 0.03
+	$ python3 mian.py -train_x train_x -train_y train_y -test_x test_x -test_y test_y -local True
 ```
 
-Note that for using the dataset given in this repo, you need to unzip the dataset.zip folder (for example, using 7-zip)
+Note that for using the dataset given in this repo, you need to unzip the dataset.zip folder (using 7-zip for example)
 ## Dependencies
 * [Python 3.6+](https://www.python.org/downloads/)
 * Git
 * [NumPy](https://numpy.org/install/)
 * [Matplotlib](https://matplotlib.org/stable/users/installing.html)
 * [Argparse](https://pypi.org/project/argparse/)
-* 
+* [PyTorch](https://pytorch.org/get-started/locally/)
+* [torchvision](https://pypi.org/project/torchvision/)
 
 ## Installation
 
