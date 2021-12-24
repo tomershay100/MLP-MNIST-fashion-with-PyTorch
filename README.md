@@ -139,4 +139,4 @@ Note that for using the dataset given in this repo, you need to unzip the datase
 
  
 ## Footnote:
-As you can see, there are several additional files. The files contain different graphs of different experiments of the program with some changes of the hyperparameters (e.g. learning rate, batch size, etc.) . In addition, it contains a report in the ``Hebrew language`` that explains the structure of the models (only ``'A'`` - ``'F'``).
+As you can see, there are several additional files. The files contain different graphs of different experiments of the program with some changes of the hyperparameters (e.g. learning rate, batch size, etc.).
